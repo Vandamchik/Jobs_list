@@ -23,3 +23,7 @@ export interface JobsState {
     isLoading: boolean,
     error: string,
 }
+
+export interface JobsCardProps {
+    jobsData: IJobsData
+}
