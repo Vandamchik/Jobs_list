@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { JobsCardProps } from "../modules/modules";
+import { Link } from "react-router-dom";
 
 
 
 export function JobsCard({jobsData}: JobsCardProps):JSX.Element {
     const [createdDate, setCreatedDate] = useState<string | null>(null)
     const [cardImage, setCardImage] = useState<string>("")
-
 
 
     useEffect(() => {
@@ -16,21 +16,16 @@ export function JobsCard({jobsData}: JobsCardProps):JSX.Element {
         setCardImage(img)
     },[])
 
-    // console.log(jobsData)
-
-    const titleHandler = () => {
-
-    }
 
 
     return (
         <div className='bg-white flex flex-row mb-[8px] pb-[24px] w-[945px]'>
             <img src={cardImage} alt={jobsData.name} className="w-[85px] h-[85px] rounded-full ml-[16px] mr-[26px] mb-[55px] mt-[24px]"/>
             <div className='flex flex-col items-start justify-between mt-[24px] w-[450px]'>
-                <p
-                    onClick={titleHandler}
-                    className='mb-[8px] text-[#3A4562] font-bold text-[20px]'
-                >{jobsData.title}</p>
+                <Link
+                    to={`/${jobsData.id}`}
+                    className='mb-[8px] text-[#3A4562] font-bold text-[20px] cursor-pointer'
+                >{jobsData.title}</Link>
                 <p className='mb-[8px] text-[#878D9D]'>{jobsData.name}</p>
                 <div className="flex items-start">
                 <svg width="13" height="20" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">

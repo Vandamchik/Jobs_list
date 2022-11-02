@@ -11,7 +11,7 @@ export function App():JSX.Element {
     <>
         <Routes>
             <Route path='/' element={ <JobBoardDesktop /> } />
-            <Route path='/details' element={ <JobDetailDesktop /> } />
+            <Route path='/:details' element={ <JobDetailDesktop /> } />
         </Routes>
     </>
   );

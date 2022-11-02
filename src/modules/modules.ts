@@ -1,7 +1,7 @@
 export interface IJobsData {
     address: string;
     benefits: string[];
-    createdAt: Date;
+    createdAt: string;
     description: string;
     email: string;
     employment_type: string[];
@@ -26,4 +26,24 @@ export interface JobsState {
 
 export interface JobsCardProps {
     jobsData: IJobsData
+}
+
+export interface DetailsDataProps {
+    detailsData: IJobsData
+}
+
+export interface InfoDetailsProps {
+    infoData: IJobsData
+}
+
+export interface AdditionalInfoProps {
+    info: IJobsData
+}
+
+export interface AttachedImagesProps {
+    images: string[]
+}
+
+export interface JobDescriptionProps {
+    description: IJobsData
 }
