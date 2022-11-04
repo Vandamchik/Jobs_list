@@ -6,7 +6,6 @@ import { JobDetailDesktop } from "../pages/JobDetailDesktop";
 
 export function App():JSX.Element {
 
-
   return (
     <>
         <Routes>

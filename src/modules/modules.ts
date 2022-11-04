@@ -45,5 +45,5 @@ export interface AttachedImagesProps {
 }
 
 export interface JobDescriptionProps {
-    description: IJobsData
+    descriptionInfo: IJobsData
 }

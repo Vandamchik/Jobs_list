@@ -1,7 +1,7 @@
 import React from 'react';
 
-export function ApplyButton():JSX.Element {
 
+export function ApplyButton():JSX.Element {
 
     return (
         <button
