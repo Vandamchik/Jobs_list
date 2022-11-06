@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { fetchJobs } from './actionCreator'
 import { IJobsData, JobsState } from "../../modules/modules";
 
+
 const initialState: JobsState = {
     jobs: [],
     isLoading: false,

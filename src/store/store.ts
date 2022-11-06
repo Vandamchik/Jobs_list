@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { jobsReducer } from './reducers/jobsSlice'
 
+
 const rootReducer = combineReducers({
     jobsReducer
 })
